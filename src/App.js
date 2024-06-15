@@ -12,6 +12,7 @@ import Page9 from "./pages/Page9"
 import Page10 from "./pages/Page10"
 import Page11 from "./pages/Page11"
 import Page12 from "./pages/Page12"
+import Page13 from "./pages/Page13"
 import Questions from "./pages/Questions"
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/page10' element={<Page10/>} />
         <Route path='/page11' element={<Page11/>} />
         <Route path='/page12' element={<Page12/>} />
+        <Route path='/Page13' element={<Page13/>} />
         <Route path='/questions' element={<Questions/>} />
       </Routes>
     </div>

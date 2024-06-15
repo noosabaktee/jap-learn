@@ -1,15 +1,17 @@
-import '../styles/Home.css';
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div id="home">
-        <hr></hr>
-        <p>はじましょう</p>
-        <p>hajimashou</p>
-        <Link to="/page2">
-          <button>MARI MULAI</button>
-        </Link>
+        <div style={{"padding-top": "300px"}}>
+          <hr className="center-margin"></hr>
+          <p>はじましょう</p>
+          <p>hajimashou</p>
+          <Link to="/page2">
+            <button><p>MARI MULAI</p></button>
+          </Link>
+          <hr className="center-margin"></hr>
+        </div>
     </div>
   );
 }

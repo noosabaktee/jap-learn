@@ -1,14 +1,16 @@
-import '../styles/Home.css';
 import { Link } from "react-router-dom";
 
 function Page11() {
   return (
     <div id="page11">
-        <p>kosakata harga obat</p>
-        <p>100 =ひゃく( hyaku)</p>
-        <p>1.000 =いっせん (issen)</p>
-        <p>10.000=いちまん (ichiman)</p>
-        <p>100.000.000= いちおく(ichioku)</p>
+      <div style={{"paddingTop":"100px"}}>
+        <div className="box">
+          <span className="title">kosakata harga obat</span><br></br>
+          <span>100 =ひゃく( hyaku)</span>
+          <span>1.000 =いっせん (issen)</span>
+          <span>10.000=いちまん (ichiman)</span>
+          <span>100.000.000= いちおく(ichioku)</span>
+        </div>
         <div id='next-back-btn'>
           <Link to="/page10">
             <button id='back-btn'>Back</button>
@@ -17,6 +19,7 @@ function Page11() {
             <button id='next-btn'>Next</button>
           </Link>
         </div>
+      </div>
     </div>
   );
 }

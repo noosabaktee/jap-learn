@@ -1,11 +1,9 @@
-import '../styles/Home.css';
 import { Link } from "react-router-dom";
 
 function Page8() {
   return (
     <div id="page8">
-        <p>じょうざいはにかいちにちにちをのんでください<br></br>Jōzai wa ni kai ichi-nichi ni nonde kudasai</p>
-        <p>このじょうざいはどのようにふくようしますか？<br></br>Kono jōzai wa dono yō ni fukuyō shimasu ka?</p>
+      <div>
         <div id='next-back-btn'>
           <Link to="/page7">
             <button id='back-btn'>Back</button>
@@ -14,6 +12,7 @@ function Page8() {
             <button id='next-btn'>Next</button>
           </Link>
         </div>
+      </div>
     </div>
   );
 }

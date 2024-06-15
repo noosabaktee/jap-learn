@@ -1,13 +1,15 @@
-import '../styles/Home.css';
 import { Link } from "react-router-dom";
 
 function Page6() {
   return (
     <div id="page6">
-        <p>しょうひしゃがやっきょくのスタッフにくすりのしようほうほうをたずねます</p>
-        <p>Shouhisha ga yakkyoku no sutaffu ni kusuri no shiyou houhou o tazunemasu.</p>
-        <p>(しょうひしゃ)<br></br>( Shouhisha)</p>
-        <p>この錠剤はどのように服用しますか?<br></br>(Kono jouzai wa dono you ni fukuyou shimasuka?) </p>
+      <div>
+        <span>しょうひしゃがやっきょくのスタッフにくすりのしようほうほうをたずねます</span><br></br>
+        <span>Shouhisha ga yakkyoku no sutaffu ni kusuri no shiyou houhou o tazunemasu.</span>
+        <div className="box" style={{"position":"absolute","bottom":"50px","left":"0", "right":"0"}}>
+          <span>(しょうひしゃ)<br></br>( Shouhisha)</span>
+          <span>この錠剤はどのように服用しますか?<br></br>(Kono jouzai wa dono you ni fukuyou shimasuka?) </span>
+        </div>
         <div id='next-back-btn'>
           <Link to="/page5">
             <button id='back-btn'>Back</button>
@@ -16,6 +18,7 @@ function Page6() {
             <button id='next-btn'>Next</button>
           </Link>
         </div>
+      </div>
     </div>
   );
 }

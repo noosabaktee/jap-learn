@@ -1,15 +1,13 @@
 *{
   margin: 0;
   padding: 0;
-  font-size: 22px;
 }
 
 .App{
-  width: 512px;
+  max-width: 420px;
   height: 100vh;
   margin: 0 auto;
   text-align: center;
-  padding-top: 10px;
 }
 
 button{
@@ -19,16 +17,129 @@ button{
 }
 
 #next-back-btn{
-  position: relative;
-  margin-top: 20px;
+  width: 420px;
+  bottom: 5px;
+  padding: 2px 0;
+  position: absolute;
+  left: 0px;
 }
 
 #next-btn{
-  position: absolute;
-  right: 0;
+  margin: 0 4px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 24px;
+  padding: 2px 5px;
+  float: right;
+  opacity: 70%;
 }
 
 #back-btn{
+  margin: 0 4px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 24px;
+  padding: 2px 5px;
+  float: left;
+  opacity: 70%;
+}
+
+#home{
+  height: 100vh;
+  background-size: 420px 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../public/images/home.jpg");
+}
+
+
+#page2, #page10, #page11, #page12{
+  position: relative;
+  height: 100vh;
+  background-size: 420px 100vh;
+  background-image: url("../public/images/page2.jpg");
+}
+
+#page3, #page4, #page5, #page9{
+  position: relative;
+  height: 100vh;
+  background-size: 420px 100vh;
+  background-image: url("../public/images/page3.jpg");
+}
+
+#page6, #page7, #questions, #page13{
+  position: relative;
+  height: 100vh;
+  background-size: 420px 100vh;
+  background-image: url("../public/images/page6.jpg");
+}
+
+#page7{
+  position: relative;
+  height: 100vh;
+  background-size: 420px 100vh;
+  background-image: url("../public/images/page7.jpg");
+}
+
+#page8{
+  position: relative;
+  height: 100vh;
+  background-size: 420px 100vh;
+  background-image: url("../public/images/page8.jpg");
+}
+#page2:first-child,#page3:first-child,#page4:first-child,#page5:first-child,
+#page6:first-child,#page7:first-child,#page8:first-child,#page9:first-child,
+#page10:first-child,#page11:first-child,#page12:first-child,#page13:first-child{
+  padding: 0 20px;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex div{
+  width: 50%;
+  margin: 20px 10px;
+}
+
+span{
+  display: block;
+  font-size: 16px;
+}
+
+#feedback{
   position: absolute;
-  left: 0;
+  top: 0;
+  width: 420px;
+  height: 100vh;
+}
+
+.center-margin{
+  margin: 0 auto;
+}
+
+hr{
+  border: 1px solid white;
+  max-width: 150px;
+}
+
+#home p{
+  color: white;
+  font-size: 26px;
+  margin: 5px 0;
+}
+
+.flex div, .box{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 70%;
+}
+
+#box hr{
+  border: 1px solid black;
+}
+
+.title{
+  font-size: 22px;
 }
