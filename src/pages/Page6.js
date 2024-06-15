@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 function Page6() {
   return (
     <div id="page6">
+      <br></br>
       <div>
         <span>しょうひしゃがやっきょくのスタッフにくすりのしようほうほうをたずねます</span><br></br>
         <span>Shouhisha ga yakkyoku no sutaffu ni kusuri no shiyou houhou o tazunemasu.</span>

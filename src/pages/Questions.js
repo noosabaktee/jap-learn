@@ -30,16 +30,16 @@ function Questions() {
         <br></br>
         <span className="title">bentuk soal pilihan ganda quizz</span><br></br><br></br>
         <span className="title">{quests[current]["no"]}. {quests[current]["soal"]}</span>
-        <div className="flex">
-          <button className="box title" style={{"margin":"30px auto"}} onClick={() => answer(current,"a")}>a. {quests[current]["a"]}</button><br></br>
-          <button className="box title" style={{"margin":"30px auto"}} onClick={() => answer(current,"b")}>b. {quests[current]["b"]}</button><br></br>
+        <div className="flex" style={{"alignItems":"center","justifyContent":"center"}}>
+          <button className="box title" style={{"margin":"20px 10px"}} onClick={() => answer(current,"a")}>a. {quests[current]["a"]}</button><br></br>
+          <button className="box title" style={{"margin":"20px 10px"}} onClick={() => answer(current,"b")}>b. {quests[current]["b"]}</button><br></br>
         </div>
         <div>
-          <button className="box title" style={{"margin":"30px auto"}} onClick={() => answer(current,"c")}>c. {quests[current]["c"]}</button>
+          <button className="box title" style={{"margin":"10px auto"}} onClick={() => answer(current,"c")}>c. {quests[current]["c"]}</button>
         </div>
         {current <= 0 && <Link to="/page13"><button id='back-btn' style={{"position":"absolute","bottom":"5px","left":"0"}}>Back</button></Link>}
         {isCorrect != null && current < quests.length && 
-          <div id="feedback" style={{"backgroundImage": `url(${bgImg})`, "backgroundSize": "cover"}}>
+          <div id="feedback" style={{"backgroundImage": `url(${bgImg})`, "backgroundSize": "cover","height":"100vh","maxWidth":"420px","width":"100%","backgroundPosition": "center center"}}>
             <div style={{"position":"absolute","bottom":"5px", "left":"0","right":"0"}}>
               {isCorrect == false && <span className="title">Jawaban yang benar <br></br> {quests[current]["correct"]}. {quests[current][quests[current]["correct"]]}</span>}
               {current < quests.length-1 && <button onClick={() => {setCurrent(current+=1);setIsCorrect(null)}} id="next-btn">Next</button>}
