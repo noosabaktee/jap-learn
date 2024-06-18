@@ -4,8 +4,10 @@ function Page10() {
   return (
     <div id="page10">
       <div style={{"paddingTop":"100px"}}>
+        <span className="title box" style={{"maxWidth":"12rem"}}>pola kalimat efek samping obat</span>
+        <img src={require("../orang-1.png")} width="180px" style={{"position":"absolute","top":"50px"}} data-aos="fade-right"/>
+        <br></br>
         <div className="box">
-          <span className="title">pola kalimat efek samping obat</span><br></br>
           <span>[Subject] + が + [Obat/Perawatan] + を使うと + [Efek Samping] + ことがあります。</span><br></br>
           <span>contoh kalimat </span>
           <span>わたしはくすりをつかうとめまいがすることがあります。<br></br>Watashi wa kusuri o tsukau to memai ga suru koto ga arimasu.</span>

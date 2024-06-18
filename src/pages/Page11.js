@@ -4,8 +4,10 @@ function Page11() {
   return (
     <div id="page11">
       <div style={{"paddingTop":"100px"}}>
+        <span className="title box" style={{"maxWidth":"12rem"}}>kosakata harga obat</span>
+        <img src={require("../orang-1.png")} width="180px" style={{"position":"absolute","top":"50px"}} data-aos="fade-right"/>
+        <br></br>
         <div className="box">
-          <span className="title">kosakata harga obat</span><br></br>
           <span>100 =ひゃく( hyaku)</span>
           <span>1.000 =いっせん (issen)</span>
           <span>10.000=いちまん (ichiman)</span>

@@ -14,8 +14,17 @@ import Page11 from "./pages/Page11"
 import Page12 from "./pages/Page12"
 import Page13 from "./pages/Page13"
 import Questions from "./pages/Questions"
+import {useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // values from 0 to 3000, with step 50ms
+    });
+  }, [])
   return (
     <div className="App">
       <Routes>

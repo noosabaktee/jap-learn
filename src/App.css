@@ -68,26 +68,35 @@ button{
   background-image: url("../public/images/page3.jpg");
 }
 
-#page6, #page7, #questions, #page13{
+#page6, #questions, #page13{
   position: relative;
   min-height: 100vh;
   background-size: 420px 100vh;
   background-image: url("../public/images/page6.jpg");
 }
 
-#page7{
+#page7, #page8{
   position: relative;
   min-height: 100vh;
   background-size: 420px 100vh;
   background-image: url("../public/images/page7.jpg");
 }
 
-#page8{
-  position: relative;
-  min-height: 100vh;
-  background-size: 420px 100vh;
-  background-image: url("../public/images/page8.jpg");
+.bg-awan{
+  padding-top: 45px;
+  width: 14rem;
+  height: 12rem;
+  background-size: 14rem 15rem;
+  background-repeat: no-repeat;
+  background-image: url("../public/images/awan.png");
 }
+
+.bg-awan span{
+  margin: 0 auto;
+  max-width: 8rem;
+  font-size: .8rem !important;
+}
+
 #page2:first-child,#page3:first-child,#page4:first-child,#page5:first-child,
 #page6:first-child,#page7:first-child,#page8:first-child,#page9:first-child,
 #page10:first-child,#page11:first-child,#page12:first-child,#page13:first-child{

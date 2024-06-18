@@ -6,10 +6,16 @@ function Page6() {
       <br></br>
       <div>
         <span>しょうひしゃがやっきょくのスタッフにくすりのしようほうほうをたずねます</span><br></br>
-        <span>Shouhisha ga yakkyoku no sutaffu ni kusuri no shiyou houhou o tazunemasu.</span>
-        <div className="box" style={{"position":"absolute","bottom":"50px","left":"0", "right":"0"}}>
-          <span>(しょうひしゃ)<br></br>( Shouhisha)</span>
-          <span>この錠剤はどのように服用しますか?<br></br>(Kono jouzai wa dono you ni fukuyou shimasuka?) </span>
+        <span>Shouhisha ga yakkyoku no sutaffu ni kusuri no shiyou houhou o tazunemasu.</span><br></br>
+        <div style={{"position":"absolute","bottom":"50px","left":"0", "right":"0"}}>
+          <img src={require("../orang-2.png")} width="200px" style={{"margin-bottom":"-20px"}}/>
+          <div className="box">
+            <img src={require("../msg.png")} width="30px" style={{"float":"right"}}/>
+            <div style={{"clear":"both"}}>
+              <span>(しょうひしゃ)<br></br>( Shouhisha)</span>
+              <span>この錠剤はどのように服用しますか?<br></br>(Kono jouzai wa dono you ni fukuyou shimasuka?) </span>
+            </div>
+          </div>
         </div>
         <div id='next-back-btn'>
           <Link to="/page5">
