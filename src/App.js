@@ -24,13 +24,11 @@ function App() {
     AOS.init({
       duration: 1000, // values from 0 to 3000, with step 50ms
     });
-    var audio = new Audio(require('./backsound.mp3'));
-    audio.volume = 0.5
-    audio.loop = true
-    audio.play();
   }, [])
   return (
     <div className="App">
+    <audio controls autoPlay loop src={require('./backsound.mp3')} style={{"display":"none"}}>
+    </audio>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/page2' element={<Page2/>} />
