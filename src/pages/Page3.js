@@ -5,9 +5,9 @@ function Page3() {
     <div id="page3">
         <div>
           <div  style={{"position":"absolute","bottom":"50px","left":"0"}}>     
-            <img src={require("../orang-3.png")} width="200px" style={{"margin-bottom":"-5px"}}/>
+            <img src={require("../orang-3.png")} width="200px" style={{"marginBottom":"-5px"}} alt="orang"/>
             <div  className="box">
-              <img src={require("../msg.png")} width="30px" style={{"float":"right"}}/>
+              <img src={require("../msg.png")} width="30px" style={{"float":"right"}} alt="msg"/>
               <span style={{"clear":"both"}}>
                 よこそ(selamat daatang)<br></br>
                 何 注文 は薬をかいますか?(nan chuumon wa kusuri wo kaimasuka?)<br></br>

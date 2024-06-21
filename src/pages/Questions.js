@@ -15,12 +15,19 @@ function Questions() {
     {no: 5, soal:"obat maag bahasa jepang apa?", a:"ください", b:"めぐすり", c:"いちょうやく", correct:"a"},
   ]
 
+  const playSound = (ans) => {
+    var audio = ans === true ? new Audio(require('../correct.mp3')) : new Audio(require('../wrong.mp3'));
+    audio.play();
+  }
+
   let answer = (no_soal,answer) => {
-    if(quests[no_soal]["correct"] == answer){
+    if(quests[no_soal]["correct"] === answer){
       setIsCorrect(true)
+      playSound(true)
       setBgImg(correct)
     }else{
       setIsCorrect(false)
+      playSound(false)
       setBgImg(wrong)
     }
   }
@@ -41,7 +48,7 @@ function Questions() {
         {isCorrect != null && current < quests.length && 
           <div id="feedback" style={{"backgroundImage": `url(${bgImg})`, "backgroundSize": "cover","height":"100vh","maxWidth":"420px","width":"100%","backgroundPosition": "center center"}}>
             <div style={{"position":"absolute","bottom":"5px", "left":"0","right":"0"}}>
-              {isCorrect == false && <span className="title">Jawaban yang benar <br></br> {quests[current]["correct"]}. {quests[current][quests[current]["correct"]]}</span>}
+              {isCorrect === false && <span className="title">Jawaban yang benar <br></br> {quests[current]["correct"]}. {quests[current][quests[current]["correct"]]}</span>}
               {current < quests.length-1 && <button onClick={() => {setCurrent(current+=1);setIsCorrect(null)}} id="next-btn">Next</button>}
               {current >= quests.length-1 && <Link to="/"><button id="next-btn">Home</button></Link>}
             </div>

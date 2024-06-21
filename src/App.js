@@ -24,6 +24,10 @@ function App() {
     AOS.init({
       duration: 1000, // values from 0 to 3000, with step 50ms
     });
+    var audio = new Audio(require('./backsound.mp3'));
+    audio.volume = 0.5
+    audio.loop = true
+    audio.play();
   }, [])
   return (
     <div className="App">

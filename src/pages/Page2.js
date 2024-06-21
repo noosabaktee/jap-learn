@@ -6,7 +6,7 @@ function Page2() {
         <div >
           <span className="box" style={{"position":"absolute","bottom":"50%","margin":"0 auto","width":"80%"}}>
             あるむらにはゆいいつのやっきょくである JB やっきょくがあります。そのやっきょくはごぜんにじからごごごじまでえいぎょうしています。Aru mura ni wa yuiitsu no yakkyoku de aru JB Yakkyoku ga arimasu. Sono yakkyoku wa gozen niji kara gogo goji made eigyou shiteimasu.
-            <br></br><hr style={{"margin":"50px auto","border":"1px solid black","max-width": "200px"}}></hr>
+            <br></br><hr style={{"margin":"50px auto","border":"1px solid black","maxWidth": "200px"}}></hr>
           </span>
           <div id='next-back-btn'>
             <Link to="/">
