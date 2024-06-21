@@ -5,7 +5,7 @@ function Page11() {
     <div id="page11">
       <div style={{"paddingTop":"100px"}}>
         <span className="title box" style={{"maxWidth":"12rem"}}>kosakata harga obat</span>
-        <img src={require("../orang-1.png")} width="180px" style={{"position":"absolute","top":"50px"}} data-aos="fade-right"/>
+        <img src={require("../orang-1.png")} width="180px" style={{"position":"absolute","top":"50px"}} data-aos="fade-right" alt="orang"/>
         <br></br>
         <div className="box">
           <span>100 =ひゃく( hyaku)</span>

@@ -4,7 +4,7 @@ function Page2() {
   return (
     <div id="page2">
         <div >
-          <span className="box" style={{"position":"absolute","bottom":"50%","margin":"0 auto","width":"80%"}}>
+          <span className="box" style={{"position":"absolute","bottom":"50%","left":"0","right":"0","margin":"0 auto","width":"80%"}}>
             あるむらにはゆいいつのやっきょくである JB やっきょくがあります。そのやっきょくはごぜんにじからごごごじまでえいぎょうしています。Aru mura ni wa yuiitsu no yakkyoku de aru JB Yakkyoku ga arimasu. Sono yakkyoku wa gozen niji kara gogo goji made eigyou shiteimasu.
             <br></br><hr style={{"margin":"50px auto","border":"1px solid black","maxWidth": "200px"}}></hr>
           </span>

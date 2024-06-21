@@ -5,7 +5,7 @@ function Page5() {
     <div id="page5">
       <div>
         <br></br>
-        <div className="box" style={{"maxWidth":"14rem"}} data-aos="fade-up">
+        <div className="box" style={{"maxWidth":"14rem","marginLeft":"10px"}} data-aos="fade-up">
           <p>kosakata obat</p>
           <p>ことばくすり</p>
         </div>

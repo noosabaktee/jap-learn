@@ -5,7 +5,7 @@ function Page10() {
     <div id="page10">
       <div style={{"paddingTop":"100px"}}>
         <span className="title box" style={{"maxWidth":"12rem"}}>pola kalimat efek samping obat</span>
-        <img src={require("../orang-1.png")} width="180px" style={{"position":"absolute","top":"50px"}} data-aos="fade-right"/>
+        <img src={require("../orang-1.png")} width="180px" style={{"position":"absolute","top":"50px"}} data-aos="fade-right" alt="orang"/>
         <br></br>
         <div className="box">
           <span>[Subject] + が + [Obat/Perawatan] + を使うと + [Efek Samping] + ことがあります。</span><br></br>

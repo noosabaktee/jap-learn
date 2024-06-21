@@ -5,7 +5,7 @@ function Page9() {
     <div id="page9">
       <div style={{"paddingTop":"100px"}}>
         <span className="title box" style={{"maxWidth":"12rem"}}>pola kalimat aturan pemakaian obat </span>
-        <img src={require("../orang-1.png")} width="180px" style={{"position":"absolute","top":"50px"}} data-aos="fade-right"/>
+        <img src={require("../orang-1.png")} width="180px" style={{"position":"absolute","top":"50px"}} data-aos="fade-right" alt="orang"/>
         <br></br>
         <div className="box">
           <span>このめぐすりをまいにちにかい、めにさしてください。</span><br></br>
