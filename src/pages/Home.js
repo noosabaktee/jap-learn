@@ -7,6 +7,8 @@ function Home() {
   }
   return (
     <div id="home">
+        <img src={require("../logo-2.png")} style={{"position":"absolute","left":"0"}} width="150px" alt="logo-2"/>
+        <img src={require("../logo-1.png")} style={{"position":"absolute","right":"0"}} width="100px" alt="logo-1"/>
         <div style={{"paddingTop": "150px"}}>
           <img src={require("../rs.png")} width="150px" data-aos="fade-up" alt="rumah-sakit"/>
           <hr className="center-margin"></hr>

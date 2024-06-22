@@ -27,8 +27,8 @@ function App() {
   }, [])
   return (
     <div className="App">
-    <audio controls autoPlay loop src={require('./backsound.mp3')} style={{"display":"none"}}>
-    </audio>
+      {/* <audio controls autoPlay loop src={require('./backsound.mp3')} style={{"display":"none"}}></audio> */}
+      <iframe src={require('./backsound.mp3')} allow="autoplay" style={{"display":"none"}} id="iframeAudio"></iframe>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/page2' element={<Page2/>} />
